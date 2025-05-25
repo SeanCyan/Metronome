@@ -18,8 +18,8 @@ const tickAudio = ref(new Audio());
 const accentAudio = ref(new Audio());
 
 watchEffect(() => {
-  tickAudio.value = new Audio(`/${props.soundSet}_tick.wav`);
-  accentAudio.value = new Audio(`/${props.soundSet}_accent.wav`);
+tickAudio.value = new Audio(`${import.meta.env.BASE_URL}${props.soundSet}_tick.wav`);
+accentAudio.value = new Audio(`${import.meta.env.BASE_URL}${props.soundSet}_accent.wav`);
 });
 
 let intervalId = null;
