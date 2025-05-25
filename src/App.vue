@@ -111,7 +111,7 @@ button {
   border-radius: 8px;
 }
 select {
-  width:200px;
+  width:280px;
   margin: 10px 20px;
   background-color:#5e5e5e;
   color:#ffffff;
