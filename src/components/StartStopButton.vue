@@ -29,13 +29,14 @@ defineProps({
   cursor: pointer;
   transition: box-shadow 0.2s, transform 0.1s;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-  margin:70px 0;
+  margin:50px 0 70px;
+  transition: background-color .3s ease-in-out;
 }
 .start-stop-button:hover {
 background-color: #e2e2e25e;
 }
 .start-stop-button.pulse {
-  box-shadow: 0 0 150px 0px rgba(0, 255, 136, 0.7);
+  box-shadow: 0 0 60px 0px rgba(0, 255, 136, 0.7);
 }
 
 .start-stop-button:active {

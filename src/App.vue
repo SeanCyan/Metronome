@@ -44,6 +44,7 @@ const beatSubdivision = ref(1); // 1 = simple (4/4, 3/4), 3 = compound (6/8)
 const soundSet = ref('default');
 const shouldPulse = ref(false);
 
+
 function toggleMetronome() {
   isPlaying.value = !isPlaying.value;
 }
