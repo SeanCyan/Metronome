@@ -22,7 +22,7 @@ import { ref, watch, computed } from 'vue';
 const props = defineProps(['bpm']);
 const emit = defineEmits(['update:bpm']);
 
-const localBpm = ref(props.bpm);
+const localBpm = ref(90); // default BPM of 90
 
 watch(localBpm, (newVal) => {
   emit('update:bpm', newVal);
