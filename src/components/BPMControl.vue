@@ -24,6 +24,14 @@ const emit = defineEmits(['update:bpm']);
 
 const localBpm = ref(90); // default BPM of 90
 
+watch(
+  () => props.bpm,
+  (newBpm) => {
+    localBpm.value = newBpm;
+  },
+  { immediate: true }
+);
+
 watch(localBpm, (newVal) => {
   emit('update:bpm', newVal);
 });
@@ -31,7 +39,6 @@ watch(localBpm, (newVal) => {
 function increaseBpm() {
   if (localBpm.value < 240) localBpm.value++;
 }
-
 function decreaseBpm() {
   if (localBpm.value > 40) localBpm.value--;
 }

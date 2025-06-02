@@ -6,7 +6,7 @@
       :shouldPulse="shouldPulse"
       @toggle="toggleMetronome"
     />
-    <BPMControl v-model="bpm" />
+    <BPMControl v-model:bpm="bpm" />
     <Metronome
       :bpm="bpm"
       :isPlaying="isPlaying"
